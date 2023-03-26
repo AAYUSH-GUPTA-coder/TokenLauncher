@@ -183,10 +183,10 @@ const Dashboard = () => {
             id="price"
             name="price"
             label="Price"
-            placeholder="1 5IRE"
+            placeholder="1 ETH"
             type="number"
             onChange={(e) => setPrice(e.target.value)}
-            helper="Recommend initial NFT Price - 2 5IRE, No '5IRE' Symbol Required."
+            helper="Recommend initial NFT Price - 2 ETH, No 'ETH' Symbol Required."
           />
           <button
             onClick={async (e) => {
