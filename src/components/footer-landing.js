@@ -9,7 +9,7 @@ const Footer = () => {
               <a href="">Tokenverse</a>
             </span>
             <a
-              href="https://github.com/AAYUSH-GUPTA-coder"
+              href="https://github.com/AAYUSH-GUPTA-coder/Tokenverse"
               target="_blank"
               className="text-[#E4E4ED] hover:text-[#a1a1a1] dark:text-[#605e8a]"
               rel="noreferrer"
