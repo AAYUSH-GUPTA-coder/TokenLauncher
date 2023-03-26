@@ -26,7 +26,7 @@ export default function Home() {
                   alt="tokenverse"
                 />
                 <h1 className="text-4xl sm:text-5xl mt-[-3rem] font-extrabold text-[#E4E4ED] animate__animated animate__zoomIn">
-                  tokenverse
+                  Tokenverse
                 </h1>
                 <div className="text-4xl tracking-tight font-extrabold text-[#E4E4ED] sm:text-5xl md:text-7xl lg:px-32 space-y-5">
                   <h2 className="animate__animated animate__slideInRight">
