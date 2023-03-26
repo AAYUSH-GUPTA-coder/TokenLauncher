@@ -80,7 +80,7 @@ const Support = () => {
                         color="gray.700"
                         leftIcon={<MdPhone color="#363636" size="30px" />}
                       >
-                        +91-9004590045
+                        +91-12345678
                       </Button>
                       <Button
                         size="md"
