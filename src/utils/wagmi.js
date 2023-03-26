@@ -2,7 +2,7 @@ import { createClient } from "wagmi";
 import { getDefaultClient } from 'connectkit';
 
 const scroll = {
-  id: 997,
+  id: 534353,
   name: "scrollAlpha",
   network: "scrollAlpha",
   nativeCurrency: {
