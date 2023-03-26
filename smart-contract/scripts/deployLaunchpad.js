@@ -9,7 +9,8 @@ async function main() {
 
   // here we deploy the contract
   const deployedLaunchPadContract = await launchPadContract.deploy(
-    "0xB9f9Af07fAd74C23F35CAeC708515782a15911Ba", ethers.utils.parseEther('0.01')
+    "0xB9f9Af07fAd74C23F35CAeC708515782a15911Ba",
+    ethers.utils.parseEther("0.0001")
   );
 
   // Wait for it to finish deploying
