@@ -15,7 +15,7 @@ import ABI from "../utils/ABI.json";
 import { useToast } from "@chakra-ui/react";
 import { contractAddress } from "@/utils/constants";
 import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
-import { BigNumber } from "ethers";
+import { BigNumber, utils } from "ethers";
 
 const Dashboard = () => {
   const [name, setName] = useState("");
@@ -45,7 +45,7 @@ const Dashboard = () => {
       whitelist,
     ],
     overrides: {
-      value: 1000,
+      value: utils.parseEther("0.0001"),
     },
     onError: (error) => {
       console.log("Error", error);
