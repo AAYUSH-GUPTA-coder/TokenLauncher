@@ -128,12 +128,20 @@ contract LaunchPad {
         tokenCreationPrice =  _newTokenCreationPrice;
     }
 
+    // get all tokens with metadata by creator address
+    function getTokensWithMetadataCreatedByCreator(address _creatorAddress) public view returns(TokenStruct[] memory){
+        address[] memory _tokenAddresses = tokenAddresses[_creatorAddress];
+        uint length = _tokenAddresses.length;
+        TokenStruct[] memory _tokens = new TokenStruct[](length);
+        for(uint i = 0; i < length; i++){
+            _tokens[i] = allTokenData[_creatorAddress][i];
+        }
+        return _tokens;
+    }
+
+
     // function to withdraw the funds from Launchpad contract
     function withdraw(uint256 _amount, address _receiver) payable external onlyOwner {
-        if(msg.sender != launchPadOwner){
-            revert ONLY_ONWER_CAN_CALL();
-        }
-       
         if(address(this).balance < _amount){
             revert NOT_ENOUGH_BALANCE();
         }
